@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user_data = $login_result->fetch_assoc();
         $_SESSION['user_id'] = $user_data['id'];
         $_SESSION['username'] = $user_data['fname'];
-        header("Location: profile.php");
+        header("Location: uploads.php");
         exit();
     } else {
         // Invalid login
